@@ -1,0 +1,38 @@
+<VAST version="4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Ad id="ad-bunny">
+    <InLine>
+      <AdSystem version="1.0">HydraAds</AdSystem>
+      <AdTitle>Anuncio: Big Buck Bunny</AdTitle>
+
+      <Impression><![CDATA[https://example.com/track/impression]]></Impression>
+
+      <Creatives>
+        <Creative id="1" sequence="1">
+          <Linear skipoffset="00:00:05">
+
+            <Duration>00:00:30</Duration>
+
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://example.com/track/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://example.com/track/first]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://example.com/track/mid]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://example.com/track/third]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://example.com/track/complete]]></Tracking>
+            </TrackingEvents>
+
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://example.com/destino]]></ClickThrough>
+            </VideoClicks>
+
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360" scalable="true" maintainAspectRatio="true">
+                <![CDATA[http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
